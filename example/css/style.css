@@ -41,6 +41,10 @@ h1{
 	padding-top: 50px
 }
 
+.section{
+	min-height: 600px;
+}
+
 #onepage-nav li a.scroll.active{
 	color: #4a9ec6;
 	text-decoration: none;
