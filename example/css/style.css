@@ -1,0 +1,48 @@
+body{
+	margin: 0;
+	position: relative;
+}
+
+h1{
+	padding: 0;
+	margin-top: 0;
+}
+
+#template-wrap{
+	max-width: 767px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.nav-wrap{
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 50px;
+	width: 100%;
+	background: #f1f1f1;
+}
+
+#onepage-nav{
+	padding: 0;
+	width: 767px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#onepage-nav li{
+	display: inline-block;
+	width: 100px;
+	line-height: 36px;
+	margin: 7px 0;
+}
+
+#home{
+	padding-top: 50px
+}
+
+#onepage-nav li a.scroll.active{
+	color: #4a9ec6;
+	text-decoration: none;
+}
+
