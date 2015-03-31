@@ -3,9 +3,12 @@
 	$.fn.onePgaeNav = function( options ){
 
 		var settings = $.extend({
-			wrapper		:'', 		// Nav Wrapper
-			speed 		: 900,		// animation speed
-			initRange 	: 0			// left pixel from every section top
+			activeClass 	: 'active',
+			wrapper			: '', 		// Nav wrapper selector for scroll effect
+			speed 			: 900,		// animation speed
+			navStop 		: 100,		// stop before top
+			navStart 		: 200,		// change class before navstart pixel
+
 		}, options ),
 		$that = $(this);
 
@@ -25,9 +28,9 @@
 				});
 
 				$.each( sectionTop, function(index){
-					if ( windowTop > sectionTop[index] - settings.initRange ){
-						$that.removeClass('active')
-							.eq(index).addClass('active');
+					if ( windowTop > sectionTop[index] - settings.navStart ){
+						$that.removeClass(settings.activeClass)
+							.eq(index).addClass(settings.activeClass);
 					}
 				});
 			});
@@ -41,7 +44,7 @@
 				hashTop 	= hashOffset.top;
 
 			$('html, body').animate({
-				scrollTop: hashTop - settings.initRange
+				scrollTop: hashTop - settings.navStop
 			}, settings.speed);
 		}
 
