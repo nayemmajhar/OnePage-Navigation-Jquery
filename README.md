@@ -1,4 +1,6 @@
 ## OnePage Navigation Jquery ##
+
+[![Join the chat at https://gitter.im/nayemmajhar/OnePage-Navigation-Jquery](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nayemmajhar/OnePage-Navigation-Jquery?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A simple jquery plugins to achive one-page site navigation functionality.
 
 #### Example Jquery ####
